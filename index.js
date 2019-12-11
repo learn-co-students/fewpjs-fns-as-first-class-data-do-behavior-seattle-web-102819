@@ -14,16 +14,15 @@ function greet(time) {
 
   if (new_time < 12) {
     return 'Good Morning';
-  } else if (new_time < 17 && new_time > 12) {
-    return 'Good Afternoon';
-  } else {
+  } else if (new_time > 17) {
     return 'Good Evening';
+  } else {
+    return 'Good Afternoon';
   }
 }
+
+/* Write your implementation of displayMessage() */
 
 function displayMessage(text) {
   document.getElementById("greeting").innerText = text;
 }
-
-
-/* Write your implementation of displayMessage() */
