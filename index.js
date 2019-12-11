@@ -10,14 +10,20 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 
 function greet(time) {
-  let split_time = (time).split("").replace(":", "0")
-  myTime = parseInt(split_time)
-  result  if (17 < myTime < 24) {
-    return 'Good Evening';
-  } else if (12 < myTime < 17) {
+  const new_time = parseInt(time);
+
+  if (new_time < 12) {
+    return 'Good Morning';
+  } else if (new_time < 17 && new_time > 12) {
     return 'Good Afternoon';
   } else {
-    return 'Good Morning';
-//   }
-// }
+    return 'Good Evening';
+  }
+}
+
+function displayMessage(text) {
+  let content = document.getElementById("greeting").innerText = text;
+}
+
+
 /* Write your implementation of displayMessage() */
