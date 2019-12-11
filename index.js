@@ -22,7 +22,7 @@ function greet(time) {
 }
 
 function displayMessage(text) {
-  let content = document.getElementById("greeting").innerText = text;
+  document.getElementById("greeting").innerText = text;
 }
 
 
